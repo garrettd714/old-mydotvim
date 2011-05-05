@@ -7,3 +7,6 @@
 [submodule "bundle/scrooloose-nerdtree"]
 	path = bundle/scrooloose-nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/airblade-vim-rooter"]
+	path = bundle/airblade-vim-rooter
+	url = https://github.com/airblade/vim-rooter.git
