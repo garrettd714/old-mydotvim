@@ -19,3 +19,6 @@
 [submodule "bundle/corntrace-bufexplorer"]
 	path = bundle/corntrace-bufexplorer
 	url = https://github.com/corntrace/bufexplorer.git
+[submodule "bundle/wincent-command-t"]
+	path = bundle/wincent-command-t
+	url = https://github.com/wincent/Command-T.git
