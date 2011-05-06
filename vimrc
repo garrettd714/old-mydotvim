@@ -68,6 +68,7 @@ map <leader>tm :tabmove
 
 " using Wincet's file opening plugin command-t
 map <Leader>t :CommandT<Enter>
+map <Leader>nt :NERDTree<Enter>
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
