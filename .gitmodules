@@ -25,3 +25,6 @@
 [submodule "bundle/mileszs-ack"]
 	path = bundle/mileszs-ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/tpope-vim-git"]
+	path = bundle/tpope-vim-git
+	url = https://github.com/tpope/vim-git.git
