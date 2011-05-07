@@ -37,3 +37,6 @@
 [submodule "bundle/tpope-vim-endwise"]
 	path = bundle/tpope-vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
+[submodule "bundle/msanders-snipmate"]
+	path = bundle/msanders-snipmate
+	url = https://github.com/msanders/snipmate.vim.git
