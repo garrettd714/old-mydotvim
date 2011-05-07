@@ -55,6 +55,9 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 " Or use vividchalk
 colorscheme topfunky-light
 
+" Map leader to comma for easier typing than \
+let mapleader = ","
+
 " Tab mappings.
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
@@ -74,12 +77,40 @@ map <Leader>t :CommandT<Enter>
 map <Leader>n :NERDTree<Enter>
 
 " Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
-"nnoremap : ;
+nnoremap ; :
+" nnoremap : ;
 
-"vnoremap ; :
-"vnoremap : ;
+vnoremap ; :
+" vnoremap : ;
+
+" Clear out search after instead of /nnnnn
+nnoremap <leader><space> :noh<cr>
+
+" Teach newb(me) to stay away from arrows
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+" get rid of help key while aiming for escape
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" remap caps lock to esc (after caps lock is mapped to help key)
+" inoremap <Help> <ESC>
+" nnoremap <Help> <ESC>
+" vnoremap <Help> <ESC>
 
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+
+" Like TextMate's save on losing focus
+au FocusLost * :wa
