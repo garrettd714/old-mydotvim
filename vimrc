@@ -3,10 +3,13 @@
 
 set nocompatible                  " Must come first because it changes other options.
 
-silent! call pathogen#runtime_append_all_bundles()
+filetype off
+call pathogen#runtime_append_all_bundles()
+filetype plugin indent on         " Turn on file type detection.
+
+set modelines=0			  " per http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 
 syntax enable                     " Turn on syntax highlighting.
-filetype plugin indent on         " Turn on file type detection.
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 
@@ -68,7 +71,7 @@ map <leader>tm :tabmove
 
 " using Wincet's file opening plugin command-t
 map <Leader>t :CommandT<Enter>
-map <Leader>nt :NERDTree<Enter>
+map <Leader>n :NERDTree<Enter>
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
