@@ -40,3 +40,6 @@
 [submodule "bundle/msanders-snipmate"]
 	path = bundle/msanders-snipmate
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/tomtom-tcomment"]
+	path = bundle/tomtom-tcomment
+	url = https://github.com/tomtom/tcomment_vim.git
