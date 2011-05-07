@@ -109,8 +109,8 @@ vnoremap <F1> <ESC>
 " vnoremap <Help> <ESC>
 
 " Automatic fold settings for specific files. Uncomment to use.
-" autocmd FileType ruby setlocal foldmethod=syntax
-" autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal foldmethod=syntax
+autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " Like TextMate's save on losing focus
 au FocusLost * :wa
