@@ -76,6 +76,9 @@ map <leader>tm :tabmove
 map <Leader>t :CommandT<Enter>
 map <Leader>n :NERDTree<Enter>
 
+" set NERDTree window size
+let NERDTreeWinSize=20
+
 " Controversial...swap colon and semicolon for easier commands
 nnoremap ; :
 " nnoremap : ;
@@ -109,8 +112,8 @@ vnoremap <F1> <ESC>
 " vnoremap <Help> <ESC>
 
 " Automatic fold settings for specific files. Uncomment to use.
-autocmd FileType ruby setlocal foldmethod=syntax
-autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+" autocmd FileType ruby setlocal foldmethod=syntax
+" autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " Like TextMate's save on losing focus
 au FocusLost * :wa
