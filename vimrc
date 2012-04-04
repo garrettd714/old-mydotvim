@@ -203,6 +203,9 @@ map <Leader>n ;NERDTree<Enter>
 " set NERDTree window size
 let NERDTreeWinSize=20
 
+" set NERDTree window size
+let NERDTreeWinSize=20
+
 " Controversial...swap colon and semicolon for easier commands
 nnoremap ; :
 nnoremap : ;
