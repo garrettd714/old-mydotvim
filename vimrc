@@ -3,7 +3,7 @@
 
 set nocompatible                  " Must come first because it changes other options.
 filetype off
-call pathogen#infect()
+execute pathogen#infect()
 filetype plugin indent on         " Turn on file type detection.
 set history=10000                 " remember more commands and search history
 set modelines=0			              " per http://stevelosh.com/blog/2010/09/coming-home-to-vim/
